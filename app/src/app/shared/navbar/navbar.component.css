@@ -1,3 +1,7 @@
+.active {
+  background-color: #626262;
+}
+
 .navigation {
   background-color: #2d2d2d;
   height: 40px;

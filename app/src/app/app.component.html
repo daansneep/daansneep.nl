@@ -1,4 +1,23 @@
+<navbar></navbar>
 <main>
-  <navbar></navbar>
   <router-outlet></router-outlet>
 </main>
+<footer>
+  <section class="container">
+    <section>
+      <h2>Links</h2>
+      <ul>
+        <li><a href="https://github.com/daansneep">My Github page</a></li>
+        <li><a href="https://www.linkedin.com/in/daan-sneep/">My LinkedIn</a></li>
+        <li><a href="https://www.degroenecomputershop.nl/webshop/index.php">The computer shop I work at</a></li>
+      </ul>
+    </section>
+    <section>
+      <h2>More Links</h2>
+      <ul>
+        <li><a (click)="generateInterest()">One of my interests!</a></li>
+        <li><a href="https://www.google.com/teapot">Go get some tea!</a></li>
+      </ul>
+    </section>
+  </section>
+</footer>
