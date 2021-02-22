@@ -1,0 +1,31 @@
+.home {
+  background: linear-gradient(0.25turn, #ff5757, #aa9bd2);
+}
+.home .first-look h1 {
+  max-width: 1000px;
+  width: 100%;
+  margin: auto;
+  padding: 300px 0;
+}
+.home .aboutme {
+  display: flex;
+  flex-direction: column;
+  max-width: 1000px;
+  width: 100%;
+  margin: auto;
+  align-items: center;
+}
+.home .aboutme img {
+  max-width: 300px;
+  width: 100%;
+  border-radius: 180px;
+  margin-bottom: 50px;
+}
+
+.title {
+  color: white;
+  font-weight: bolder;
+  font-size: 2.2em;
+}
+
+/*# sourceMappingURL=homepage.component.css.map */
