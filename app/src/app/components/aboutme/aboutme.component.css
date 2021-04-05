@@ -4,36 +4,23 @@ article {
   width: 100%;
   margin: auto;
 }
-article .first-look h1 {
-  padding: 100px 0;
-}
-article .aboutme {
-  display: flex;
-  flex-direction: column;
-  max-width: 1000px;
-  width: 100%;
-  margin: auto;
-  align-items: center;
-}
-article .aboutme h1 {
-  padding: 50px 0;
-}
-article .aboutme .textcontainer {
+
+.textcontainer {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
-article .aboutme .textcontainer section {
+.textcontainer section {
   margin: auto;
 }
-article .aboutme .textcontainer p {
+.textcontainer p {
   padding: 20px;
 }
-article .aboutme .textcontainer .img-wrapper {
+.textcontainer .img-wrapper {
   width: 100%;
   margin: auto;
   padding: 20px;
 }
-article .aboutme .textcontainer .img-wrapper img {
+.textcontainer .img-wrapper img {
   display: block;
   max-width: 300px;
   border-radius: 20px;
@@ -41,12 +28,6 @@ article .aboutme .textcontainer .img-wrapper img {
   width: 100%;
   padding: 5px;
   margin: 0 auto;
-}
-article .aboutme img {
-  max-width: 300px;
-  width: 100%;
-  border-radius: 180px;
-  margin-bottom: 50px;
 }
 
 .title {
@@ -63,10 +44,34 @@ article .aboutme img {
   transform: scale(1.1);
 }
 
+.zoom-map {
+  transition: transform 0.5s ease-in-out;
+}
+
+.left:hover {
+  transform: scale(2.4) translate(25%, -15%);
+}
+
+.right:hover {
+  transform: scale(2.4) translate(-25%, 25%);
+}
+
+figcaption {
+  text-align: center;
+}
+
 @media only screen and (max-width: 750px) {
   .textcontainer {
     grid-template-columns: 1fr;
   }
+
+  .left:hover {
+    transform: scale(2.4);
+  }
+
+  .right:hover {
+    transform: scale(2.4);
+  }
 }
 
-/*# sourceMappingURL=homepage.component.css.map */
+/*# sourceMappingURL=aboutme.component.css.map */

@@ -1,12 +1,18 @@
+navbar {
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+}
+
 main {
   display: flex;
   flex-direction: column;
   background: linear-gradient(0.25turn, #ff5757, #aa9bd2);
-  padding: 100px;
+  padding: 40px 20px 20px 20px;
 }
 
 footer {
-  padding-top: 40px;
+  padding: 40px 20px 0 20px;
   height: 200px;
   background-color: #2d2d2d;
 }

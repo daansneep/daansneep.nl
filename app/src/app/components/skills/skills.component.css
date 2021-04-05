@@ -1,3 +1,62 @@
-
+.skills {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 50px 0;
+}
+.skills .preface {
+  padding: 20px;
+  margin: 20px auto 60px auto;
+  color: white;
+}
+.skills .preface h1 {
+  text-align: center;
+  margin: 40px;
+  font-size: 2em;
+}
+.skills .preface p {
+  margin: auto;
+  width: 60%;
+  text-align: center;
+}
+.skills .heading {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+.skills .heading button {
+  background: rgba(255, 255, 255, 0);
+  color: white;
+  border: 1px white solid;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-weight: bolder;
+  transition: all 0.2s ease-in-out;
+}
+.skills .heading button:hover {
+  transform: scale(1.07);
+  color: black;
+  background: white;
+}
+.skills hr {
+  margin: 20px 0;
+  border: 1px solid white;
+}
+.skills .main {
+  padding: 10px;
+  display: grid;
+  grid-template-columns: 25% 75%;
+  height: 100px;
+  color: white;
+}
+.skills .main .techtree {
+  padding: 10px;
+}
+.skills .main .techtree h2 {
+  font-size: 1.5em;
+}
+.skills .main .content {
+  padding: 10px;
+}
 
 /*# sourceMappingURL=skills.component.css.map */
