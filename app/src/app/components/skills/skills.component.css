@@ -3,6 +3,7 @@
   max-width: 1200px;
   margin: auto;
   padding: 50px 0;
+  height: 100%;
 }
 .skills .preface {
   padding: 20px;
@@ -33,7 +34,7 @@
   font-weight: bolder;
   transition: all 0.2s ease-in-out;
 }
-.skills .heading button:hover {
+.skills .heading button:hover, .skills .heading button.active {
   transform: scale(1.07);
   color: black;
   background: white;
@@ -42,21 +43,11 @@
   margin: 20px 0;
   border: 1px solid white;
 }
-.skills .main {
-  padding: 10px;
-  display: grid;
-  grid-template-columns: 25% 75%;
-  height: 100px;
-  color: white;
+.skills .skill-type-content {
+  height: 100%;
 }
-.skills .main .techtree {
-  padding: 10px;
-}
-.skills .main .techtree h2 {
-  font-size: 1.5em;
-}
-.skills .main .content {
-  padding: 10px;
+.skills .skill-type-content app-frontend, .skills .skill-type-content app-backend, .skills .skill-type-content app-data-management, .skills .skill-type-content app-others {
+  height: 100%;
 }
 
 /*# sourceMappingURL=skills.component.css.map */

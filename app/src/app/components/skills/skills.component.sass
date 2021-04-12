@@ -3,6 +3,7 @@
   max-width: 1200px
   margin: auto
   padding: 50px 0
+  height: 100%
 
   .preface
     padding: 20px
@@ -33,28 +34,19 @@
       font-weight: bolder
       transition: all .2s ease-in-out
 
-      &:hover
+      &:hover, &.active
         transform: scale(1.07)
         color: black
         background: rgba(255,255,255,1)
+
+
 
   hr
     margin: 20px 0
     border: 1px solid white
 
-  .main
-    padding: 10px
-    display: grid
-    grid-template-columns: 25% 75%
-    height: 100px
-    color: white
+  .skill-type-content
+    height: 100%
 
-    .techtree
-      padding: 10px
-      h2
-        font-size: 1.5em
-
-
-    .content
-      padding: 10px
-
+    app-frontend, app-backend, app-data-management, app-others
+      height: 100%
