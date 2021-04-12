@@ -12,4 +12,8 @@ export class BackendComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  backendEvent(event: Event): void {
+
+  }
+
 }

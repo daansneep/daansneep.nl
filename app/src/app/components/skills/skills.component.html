@@ -9,16 +9,15 @@
     </p>
   </section>
   <section class="heading">
-    <button data-skill="frontend" (click)="skillEvent($event.target)">Frontend</button>
-    <button data-skill="backend" (click)="skillEvent($event.target)">Backend</button>
-    <button data-skill="data-management" (click)="skillEvent($event.target)">Data Management</button>
-    <button data-skill="others" (click)="skillEvent($event.target)">Others</button>
+    <button routerLink="languages" routerLinkActive="active">Languages</button>
+    <button routerLink="frontend" routerLinkActive="active">Frontend</button>
+    <button routerLink="backend" routerLinkActive="active">Backend</button>
+    <button routerLink="data-management" routerLinkActive="active">Data Management</button>
+    <button routerLink="others" routerLinkActive="active">Others</button>
   </section>
   <hr>
   <section class="skill-type-content">
-    <app-frontend *ngIf="selectedSkill === skillType.Frontend"></app-frontend>
-    <app-backend *ngIf="selectedSkill === skillType.Backend"></app-backend>
-    <app-data-management *ngIf="selectedSkill === skillType.Data_Management"></app-data-management>
-    <app-others *ngIf="selectedSkill === skillType.Others"></app-others>
+    <h1 *ngIf="this.router.url === '/skills'">Click one of the buttons!</h1>
+    <router-outlet></router-outlet>
   </section>
 </article>

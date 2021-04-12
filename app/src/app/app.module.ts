@@ -14,6 +14,11 @@ import { DataManagementComponent } from './components/skills/data-management/dat
 import { OthersComponent } from './components/skills/others/others.component';
 import { AngularComponent } from './components/skills/frontend/angular/angular.component';
 import { ReactComponent } from './components/skills/frontend/react/react.component';
+import { LanguagesComponent } from './components/skills/languages/languages.component';
+import { JavaComponent } from './components/skills/languages/java/java.component';
+import { PythonComponent } from './components/skills/languages/python/python.component';
+import { CsharpComponent } from './components/skills/languages/csharp/csharp.component';
+import { JavatypescriptComponent } from './components/skills/languages/javatypescript/javatypescript.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +33,12 @@ import { ReactComponent } from './components/skills/frontend/react/react.compone
     DataManagementComponent,
     OthersComponent,
     AngularComponent,
-    ReactComponent
+    ReactComponent,
+    LanguagesComponent,
+    JavaComponent,
+    PythonComponent,
+    CsharpComponent,
+    JavatypescriptComponent
   ],
   imports: [
     BrowserModule,
