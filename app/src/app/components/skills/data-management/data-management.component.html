@@ -2,10 +2,11 @@
   <section class="techtree">
     <h2>Sections</h2>
     <ul>
-      <li><a>SQL: PostgreSQL</a></li>
-      <li><a>NoSQL: MongoDB</a></li>
+      <li routerLink="sql" routerLinkActive="active"><a>SQL: PostgreSQL</a></li>
+      <li routerLink="nosql" routerLinkActive="active"><a>NoSQL: MongoDB</a></li>
     </ul>
   </section>
   <section class="content">
+    <router-outlet></router-outlet>
   </section>
 </section>

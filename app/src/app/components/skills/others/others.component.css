@@ -22,7 +22,7 @@
   list-style-type: none;
   transition: background-color 0.1s ease-in-out;
 }
-.main .techtree ul li a.active {
+.main .techtree ul li.active {
   background-color: rgba(255, 255, 255, 0.4);
 }
 .main .techtree ul li:hover {

@@ -2,12 +2,13 @@
   <section class="techtree">
     <h2>Sections</h2>
     <ul>
-      <li><a>Docker</a></li>
-      <li><a>Waterfall</a></li>
-      <li><a>SCRUM</a></li>
-      <li><a>RUP</a></li>
+      <li routerLink="docker" routerLinkActive="active"><a>Docker</a></li>
+      <li routerLink="waterfall" routerLinkActive="active"><a>Waterfall</a></li>
+      <li routerLink="scrum" routerLinkActive="active"><a>SCRUM</a></li>
+      <li routerLink="rup" routerLinkActive="active"><a>RUP</a></li>
     </ul>
   </section>
   <section class="content">
+    <router-outlet></router-outlet>
   </section>
 </section>

@@ -7,7 +7,7 @@ import {Router} from "@angular/router";
   styleUrls: ['./skills.component.sass']
 })
 export class SkillsComponent implements OnInit {
-  router: Router | undefined;
+  router: Router;
 
   constructor(router: Router) {
     this.router = router

@@ -13,6 +13,16 @@ import {PythonComponent} from "../components/skills/languages/python/python.comp
 import {JavatypescriptComponent} from "../components/skills/languages/javatypescript/javatypescript.component";
 import {CsharpComponent} from "../components/skills/languages/csharp/csharp.component";
 import {JavaComponent} from "../components/skills/languages/java/java.component";
+import {AngularComponent} from "../components/skills/frontend/angular/angular.component";
+import {ReactComponent} from "../components/skills/frontend/react/react.component";
+import {NodeComponent} from "../components/skills/backend/node/node.component";
+import {DotnetComponent} from "../components/skills/backend/dotnet/dotnet.component";
+import {SqlComponent} from "../components/skills/data-management/sql/sql.component";
+import {NosqlComponent} from "../components/skills/data-management/nosql/nosql.component";
+import {DockerComponent} from "../components/skills/others/docker/docker.component";
+import {WaterfallComponent} from "../components/skills/others/waterfall/waterfall.component";
+import {ScrumComponent} from "../components/skills/others/scrum/scrum.component";
+import {RupComponent} from "../components/skills/others/rup/rup.component";
 
 const routes: Routes = [
   {path: '', component: HomepageComponent},
@@ -24,10 +34,24 @@ const routes: Routes = [
           {path: 'c#', component: CsharpComponent},
           {path: 'javatypescript', component: JavatypescriptComponent}
         ]},
-      {path: 'frontend', component: FrontendComponent},
-      {path: 'backend', component: BackendComponent},
-      {path: 'data-management', component: DataManagementComponent},
-      {path: 'others', component: OthersComponent}
+      {path: 'frontend', component: FrontendComponent, children: [
+          {path: 'angular', component: AngularComponent},
+          {path: 'react', component: ReactComponent},
+        ]},
+      {path: 'backend', component: BackendComponent, children: [
+          {path: 'node', component: NodeComponent},
+          {path: 'dotnet', component: DotnetComponent}
+        ]},
+      {path: 'data-management', component: DataManagementComponent, children: [
+          {path: 'sql', component: SqlComponent},
+          {path: 'nosql', component: NosqlComponent}
+        ]},
+      {path: 'others', component: OthersComponent, children: [
+          {path: 'docker', component: DockerComponent},
+          {path: 'waterfall', component: WaterfallComponent},
+          {path: 'scrum', component: ScrumComponent},
+          {path: 'rup', component: RupComponent}
+        ]}
     ]},
   {path: 'aboutme', component: AboutmeComponent},
   {path: 'contact', component: ContactComponent}

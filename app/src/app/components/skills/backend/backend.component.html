@@ -2,10 +2,11 @@
   <section class="techtree">
     <h2>Sections</h2>
     <ul>
-      <li><a (click)="backendEvent($event)">Node.js with Express.js</a></li>
-      <li><a>ASP.NET Core</a></li>
+      <li routerLink="node" routerLinkActive="active"><a>Node.js with Express.js</a></li>
+      <li routerLink="dotnet" routerLinkActive="active"><a>ASP.NET Core</a></li>
     </ul>
   </section>
   <section class="content">
+    <router-outlet></router-outlet>
   </section>
 </section>
