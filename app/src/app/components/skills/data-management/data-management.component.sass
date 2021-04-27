@@ -1,33 +1,42 @@
 .main
-  padding: 10px
-  display: grid
-  grid-template-columns: 25% 75%
   color: white
+  display: grid
+  grid-template-columns: 40% 40%
+  text-align: center
+  column-gap: 20%
+  width: 100%
 
-  .techtree
-    padding: 10px
-    background-color: rgba(#2d2d2d, 0.4)
-    border-radius: 18px
+  section
+    margin: auto
+    width: 60%
 
-    h2
-      font-size: 1.5em
-      margin-bottom: 10px
+h3
+  margin-bottom: 5px
 
-    ul
-      margin-left: 20px
-
-      li
-        padding: 10px
-        list-style-type: none
-        transition: background-color .1s ease-in-out
-
-        &.active
-          background-color: rgba(255,255,255,0.4)
-
-        &:hover
-          background-color: rgba(255,255,255,0.4)
-          cursor: pointer
+progress
+  padding: 5px
+  -webkit-appearance: none
+  appearance: none
 
 
-  .content
-    padding: 10px
+#sql
+  color: #478a1b
+
+  &::-moz-progress-bar
+    background-color: #478a1b
+
+  &::-webkit-progress-value
+    background-color: #478a1b
+
+#nosql
+  color: #a6d246
+
+  &::-moz-progress-bar
+    background-color: #a6d246
+
+  &::-webkit-progress-value
+    background-color: #a6d246
+
+@media only screen and (max-width: 400px)
+  .main
+    grid-template-columns: 1fr

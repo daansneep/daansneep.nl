@@ -1,3 +1,18 @@
-
+.contact {
+  min-height: 800px;
+  color: white;
+  padding: 250px 0;
+  max-width: 900px;
+  width: 90%;
+  margin: auto;
+}
+.contact h1 {
+  text-align: center;
+  padding: 40px 0;
+  font-size: 2em;
+}
+.contact p {
+  text-align: center;
+}
 
 /*# sourceMappingURL=contact.component.css.map */

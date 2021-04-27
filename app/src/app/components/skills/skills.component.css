@@ -1,4 +1,6 @@
 .skills {
+  min-height: 700px;
+  color: white;
   width: 100%;
   max-width: 1200px;
   margin: auto;
@@ -7,7 +9,7 @@
 }
 .skills .preface {
   padding: 20px;
-  margin: 20px auto 60px auto;
+  margin: 20px auto 107px auto;
   color: white;
 }
 .skills .preface h1 {
@@ -45,6 +47,16 @@
 }
 .skills .skill-type-content {
   height: 100%;
+}
+
+@media only screen and (max-width: 750px) {
+  .skills .heading {
+    flex-direction: column;
+  }
+  .skills .heading button {
+    margin: 5px auto;
+    width: 200px;
+  }
 }
 
 /*# sourceMappingURL=skills.component.css.map */

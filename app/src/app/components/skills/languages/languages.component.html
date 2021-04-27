@@ -1,14 +1,36 @@
 <section class="main">
-  <section class="techtree">
-    <h2>Sections</h2>
-    <ul>
-      <li routerLink="java" routerLinkActive="active"><a>Java</a></li>
-      <li routerLink="python" routerLinkActive="active"><a>Python</a></li>
-      <li routerLink="javatypescript" routerLinkActive="active"><a>Javascript & Typescript</a></li>
-      <li routerLink="c#" routerLinkActive="active"><a>C#</a></li>
-    </ul>
+  <section class="java">
+    <h3>Java</h3>
+    <p>
+      The first (Object Oriented) programming language I learned. Built a board game in JavaFX (Ticket To Ride).
+      Repository can be found <strong><a href="https://github.com/NielsPrins/Ticket-to-Ride">here</a></strong>. Also
+      first time I applied MVC.
+    </p>
+    <progress id="java" value="4" max="5"></progress>
   </section>
-  <section class="content">
-    <router-outlet></router-outlet>
+  <section class="python">
+    <h3>Python</h3>
+    <p>
+      The second language I learned. Used it to build object oriented as well as script based applications.
+      Also used tkinter to build a small utility application, repository can be found
+      <strong><a href="https://github.com/daansneep/gcsDatabank/tree/dev/Legacy">here</a></strong>.
+    </p>
+    <progress id="python" value="5" max="5"></progress>
+  </section>
+  <section class="javatypescript">
+    <h3>Javascript & Typescript</h3>
+    <p>
+      Languages that I use all the time when building frontends like this one in angular or react, and used in node. I
+      have been using mostly Typescript for the majority of the past year for many different projects.
+    </p>
+    <progress id="javatypescript" value="5" max="5"></progress>
+  </section>
+  <section class="csharp">
+    <h3>C#</h3>
+    <p>
+      I learned C# at the same time when I started learning .NET Core and found my previous experience with both Java
+      and Javascript to be very beneficial when learning this language as they have much in common.
+    </p>
+    <progress id="csharp" value="4" max="5"></progress>
   </section>
 </section>

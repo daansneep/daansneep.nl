@@ -64,7 +64,7 @@ article .aboutme img {
 }
 
 @media only screen and (max-width: 750px) {
-  .textcontainer {
+  article .aboutme .textcontainer {
     grid-template-columns: 1fr;
   }
 }

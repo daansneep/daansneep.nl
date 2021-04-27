@@ -15,18 +15,8 @@ import { OthersComponent } from './components/skills/others/others.component';
 import { AngularComponent } from './components/skills/frontend/angular/angular.component';
 import { ReactComponent } from './components/skills/frontend/react/react.component';
 import { LanguagesComponent } from './components/skills/languages/languages.component';
-import { JavaComponent } from './components/skills/languages/java/java.component';
-import { PythonComponent } from './components/skills/languages/python/python.component';
-import { CsharpComponent } from './components/skills/languages/csharp/csharp.component';
-import { JavatypescriptComponent } from './components/skills/languages/javatypescript/javatypescript.component';
 import { NodeComponent } from './components/skills/backend/node/node.component';
 import { DotnetComponent } from './components/skills/backend/dotnet/dotnet.component';
-import { SqlComponent } from './components/skills/data-management/sql/sql.component';
-import { NosqlComponent } from './components/skills/data-management/nosql/nosql.component';
-import { DockerComponent } from './components/skills/others/docker/docker.component';
-import { WaterfallComponent } from './components/skills/others/waterfall/waterfall.component';
-import { ScrumComponent } from './components/skills/others/scrum/scrum.component';
-import { RupComponent } from './components/skills/others/rup/rup.component';
 
 @NgModule({
   declarations: [
@@ -43,18 +33,8 @@ import { RupComponent } from './components/skills/others/rup/rup.component';
     AngularComponent,
     ReactComponent,
     LanguagesComponent,
-    JavaComponent,
-    PythonComponent,
-    CsharpComponent,
-    JavatypescriptComponent,
     NodeComponent,
-    DotnetComponent,
-    SqlComponent,
-    NosqlComponent,
-    DockerComponent,
-    WaterfallComponent,
-    ScrumComponent,
-    RupComponent
+    DotnetComponent
   ],
   imports: [
     BrowserModule,

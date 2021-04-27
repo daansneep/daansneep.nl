@@ -1,0 +1,27 @@
+.angular-content
+  display: flex
+  flex-direction: row
+
+  p
+    margin: 5px 0
+
+  img
+    margin: 0 30px
+    height: 100%
+    max-width: 250px
+
+progress
+  padding: 5px
+  -webkit-appearance: none
+  appearance: none
+  color: #478a1b
+
+  &::-moz-progress-bar
+    background-color: #478a1b
+
+  &::-webkit-progress-value
+    background-color: #478a1b
+
+@media only screen and (max-width: 750px)
+  .angular-content
+    flex-direction: column
