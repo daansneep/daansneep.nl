@@ -17,6 +17,7 @@ import { ReactComponent } from './components/skills/frontend/react/react.compone
 import { LanguagesComponent } from './components/skills/languages/languages.component';
 import { NodeComponent } from './components/skills/backend/node/node.component';
 import { DotnetComponent } from './components/skills/backend/dotnet/dotnet.component';
+import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 
 @NgModule({
   declarations: [
@@ -38,6 +39,7 @@ import { DotnetComponent } from './components/skills/backend/dotnet/dotnet.compo
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     AppRoutingModule
   ],
   providers: [],
