@@ -7,7 +7,7 @@
   width: 100%
 
   section
-    margin: auto
+    margin: 50px auto auto auto
     width: 60%
 
 h3
@@ -37,6 +37,11 @@ progress
   &::-webkit-progress-value
     background-color: #a6d246
 
-@media only screen and (max-width: 400px)
+@media only screen and (max-width: 900px)
+  .main
+    grid-template-columns: 1fr 1fr
+    grid-column-gap: 0
+
+@media only screen and (max-width: 500px)
   .main
     grid-template-columns: 1fr
