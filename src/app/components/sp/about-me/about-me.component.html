@@ -1,0 +1,35 @@
+<section class="alternate-color-wrapper">
+  <section class="base-content companies">
+    <section class="navbar-buffer"></section>
+    <h4>According to people I've worked with, I am...</h4>
+    <section class="quotes">
+      <q>Enthusiastic and honest</q>
+      <q>Eager to learn and pleasant to work with</q>
+      <q>Respectful and communicative</q>
+    </section>
+    <section class="quotes">
+      <q>Customer-oriented and a go-getter</q>
+      <q>Critical and assertive</q>
+    </section>
+    <section class="seperator">
+      <hr>
+      <p (click)="setSelected(this.defaultSelectedSkill)">SKILLS & EXPERIENCE</p>
+      <hr>
+    </section>
+    <section class="skills-and-experience">
+      <section class="pictures">
+        <div *ngFor="let experience of experiences" class="img-wrapper" [ngClass]="{'selected-img-wrapper': experience.name === selected.name}" (click)="setSelected(experience)">
+          <img id="{{ experience.name }}" src="{{ experience.img }}" alt="">
+        </div>
+      </section>
+      <section class="explainer">
+        <p *ngFor="let paragraph of selected.explainer">{{ paragraph }}</p>
+      </section>
+      <section class="pictures">
+        <div *ngFor="let skill of skills" class="img-wrapper" [ngClass]="{'selected-img-wrapper': skill.name === selected.name}" (click)="setSelected(skill)">
+          <img id="{{ skill.name }}" class="skill" src="{{ skill.img }}" alt="">
+        </div>
+      </section>
+    </section>
+  </section>
+</section>
