@@ -8,6 +8,7 @@ import { SpComponent } from './components/sp/sp.component';
 import { HomeComponent } from './components/sp/home/home.component';
 import { AboutMeComponent } from './components/sp/about-me/about-me.component';
 import { ContactComponent } from './components/sp/contact/contact.component';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { ContactComponent } from './components/sp/contact/contact.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

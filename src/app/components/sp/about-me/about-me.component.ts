@@ -1,10 +1,23 @@
 import { Component, OnInit } from '@angular/core';
 import {SkillExperience} from '../../../shared/models/skill-experience.model';
+import {animate, style, transition, trigger} from '@angular/animations';
 
 @Component({
   selector: 'app-about-me',
   templateUrl: './about-me.component.html',
-  styleUrls: ['./about-me.component.scss']
+  styleUrls: ['./about-me.component.scss'],
+  animations: [
+    trigger('loadAppear', [
+      transition(':enter', [
+        style({ opacity: 0 }),
+        animate('300ms', style({ opacity: 1 }))
+      ]),
+      transition(':leave', [
+        style({ opacity: 1 }),
+        animate('300ms', style({ opacity: 0 }))
+      ])
+    ]),
+  ]
 })
 export class AboutMeComponent implements OnInit {
   defaultSelectedSkill: SkillExperience =  new SkillExperience('default', '',
@@ -65,6 +78,10 @@ export class AboutMeComponent implements OnInit {
   }
 
   setSelected(experience: SkillExperience): void {
-    this.selected = experience;
+    this.selected = new SkillExperience('', '', []);
+
+    setTimeout(() => {
+      this.selected = experience;
+    }, 300);
   }
 }

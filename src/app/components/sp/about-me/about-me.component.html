@@ -23,7 +23,7 @@
         </div>
       </section>
       <section class="explainer">
-        <p *ngFor="let paragraph of selected.explainer">{{ paragraph }}</p>
+        <p @loadAppear *ngFor="let paragraph of selected.explainer">{{ paragraph }}</p>
       </section>
       <section class="pictures">
         <div *ngFor="let skill of skills" class="img-wrapper" [ngClass]="{'selected-img-wrapper': skill.name === selected.name}" (click)="setSelected(skill)">
