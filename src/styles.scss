@@ -10,7 +10,6 @@ html {
   padding: 0;
   box-sizing: border-box;
   font-family: 'Nunito', sans-serif;
-  user-select: none;
 }
 
 h1, h2, h3, h4, p, a, q, i {
@@ -49,7 +48,6 @@ q {
   margin: auto;
   width: 95%;
   max-width: 1200px;
-  overflow-x: hidden;
 }
 
 .alternate-color-wrapper {

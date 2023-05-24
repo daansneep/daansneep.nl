@@ -13,23 +13,95 @@
     </section>
     <section class="seperator">
       <hr>
-      <p (click)="setSelected(this.defaultSelectedSkill)">SKILLS & EXPERIENCE</p>
+      <p>EXPERIENCE</p>
       <hr>
     </section>
-    <section class="skills-and-experience">
-      <section class="pictures">
-        <div *ngFor="let experience of experiences" class="img-wrapper" [ngClass]="{'selected-img-wrapper': experience.name === selected.name}" (click)="setSelected(experience)">
+    <section class="experience">
+      <article *ngFor="let experience of experiences">
+        <div class="text">
+          <p *ngFor="let section of experience.explainer">{{ section }}</p>
+        </div>
+        <div class="img">
           <img id="{{ experience.name }}" src="{{ experience.img }}" alt="">
         </div>
-      </section>
-      <section class="explainer">
-        <p @loadAppear *ngFor="let paragraph of selected.explainer">{{ paragraph }}</p>
-      </section>
-      <section class="pictures">
-        <div *ngFor="let skill of skills" class="img-wrapper" [ngClass]="{'selected-img-wrapper': skill.name === selected.name}" (click)="setSelected(skill)">
-          <img id="{{ skill.name }}" class="skill" src="{{ skill.img }}" alt="">
+      </article>
+    </section>
+    <section class="seperator">
+      <hr>
+      <p>SKILLS</p>
+      <hr>
+    </section>
+    <section class="skills">
+      <article>
+        <div class="first-row">
+          <div class="img">
+            <img src="assets/img/frontend.svg" alt="">
+          </div>
+          <div class="img">
+            <img src="assets/img/backend.svg" alt="">
+          </div>
+          <div class="img">
+            <img src="assets/img/db.svg" alt="">
+          </div>
         </div>
-      </section>
+        <div class="second-row">
+          <div class="img">
+            <img src="assets/img/oop.svg" alt="">
+          </div>
+          <div class="img">
+            <img src="assets/img/script.svg" alt="">
+          </div>
+          <div class="img">
+            <img src="assets/img/projectmanagement.svg" alt="">
+          </div>
+          <div class="img">
+            <img src="assets/img/operationsmanagement.svg" alt="">
+          </div>
+        </div>
+        <div class="text">
+          <p>
+            For me, software engineering is not about learning as many languages as possible, or writing a Sudoku Solver
+             in every programming language. Of course, knowing more languages broadens your understanding of writing
+            efficient code, but to me, being able to envision the entire process from a requirement from a user to
+            distributing the software (updates) to all end-users and all the steps in between makes one a sucessful
+            software engineer. That is why I focussed on all of these steps, to be able to independently but also with a
+             team, put together sophisticated yet efficient software that satisfies solving the problem for the user.
+            To achieve this, during my studies but also during my work, I have focussed on adressing parts of this
+            process by learning different languages, techniques and paradigms to satisfy this skillset and to make me a
+            versatile software developer.
+          </p>
+          <p>
+            First of, the user experience is eventually what the developer will hear the most complaints about. <strong>Frontend</strong>
+             development is a key part of the fullstack process. I learned writing a usable, effective and intiutive
+            user interface which uses modern efficient techniques with the <strong>Angular</strong> framework. I have gained experience
+            from college as well as in a work setting. Besides Angular, I also know a fair bit of the <strong>React</strong> framework,
+            which I used in a few school and private projects. With the knowledge of these frameworks, I can easily pick
+             up new upcoming javascript or typescript based frontend frameworks which may arise in the next years.
+          </p>
+          <p>
+            Secondly, a frontend is useless without a <strong>backend</strong> (or multiple backend services) to sustain and provide
+            it with useful structured data. I learned to write RESTful API backends in NodeJS. This knowledge was later
+            extended with the <strong>NestJS</strong> framework, which brings Typescript to NodeJS API's. I later also learned how to
+            replicate this same functionality in a <strong>.NET Core</strong> backend. I am currently able to write backends which can
+            function in a microservices architecture which use many different protocols to exchange information
+            (HTTPS, (Web)sockets, MQTT).
+          </p>
+          <p>
+            Thirdly, the structured data that backend (services) supply usually come from diffrent sources and may have
+            different structures. I have experience in setting up effective data models that are normalised and can
+            easily be expanded upon. I know which database solution (SQL or noSQL) works best in different scenario's
+            and am able to differentiate solutions based on their needs within the CAP (Consistency, Availability and
+            Partition Tolerance) theorem.
+          </p>
+          <p>
+            Finally, having covered the full stack of modern software development, the skills that I haven't
+            highlighted are what makes me versatile and flexible. I'm quickly able to learn new languages, whether they
+            are used for OOP development (Java, C#, Javascript) or scripting (Python, PowerShell or Bash). I'm also
+            very familliar with other software and tooling related to project management, teamwork and operations like
+            Git, containerisation with Docker, Scrum tools and Ansible.
+          </p>
+        </div>
+      </article>
     </section>
   </section>
 </section>
