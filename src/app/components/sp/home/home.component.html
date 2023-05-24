@@ -1,11 +1,11 @@
 <section class="base-content title-photo">
-  <section class="photo">
-    <img @loadAppear *ngIf="hasLoaded" src="../../../../assets/img/Persoonlijke%20foto_edit.jpg" alt="">
-  </section>
   <section class="title">
     <h1 @floatInTop>Dev Ops Engineer</h1>
     <h1 @floatInRight>Tech-savvy - Dedicated - Reliable</h1>
     <i @loadAppear>Daniël Sneep (D.T.)</i>
+  </section>
+  <section class="photo">
+    <img @loadAppear *ngIf="hasLoaded" src="../../../../assets/img/Persoonlijke%20foto_edit.jpg" alt="">
   </section>
 </section>
 <section class="arrow" (click)="scrollDown()">

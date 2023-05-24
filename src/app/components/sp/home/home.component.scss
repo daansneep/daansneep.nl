@@ -1,6 +1,6 @@
 .title-photo {
   display: flex;
-  flex-direction: row;
+  flex-direction: row-reverse;
   justify-content: space-between;
   align-items: center;
   height: 82vh;
@@ -8,6 +8,7 @@
 
   .photo > img {
     max-height: 400px;
+    height: 100%;
     border-radius: 50px;
   }
 
@@ -32,5 +33,37 @@
   &:hover {
     cursor: pointer;
     background: linear-gradient(to bottom, #252936, #1e1e28, #1b1d23);
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .title-photo {
+    margin: auto;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;
+    row-gap: 25px;
+    padding: 25px 0;
+    justify-items: center;
+    align-content: center;
+
+    .photo > img {
+      max-height: 250px;
+    }
+
+    .title {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      margin-left: 0;
+
+      h1, i {
+        text-align: center;
+      }
+
+      h1 {
+        font-size: 2rem;
+      }
+    }
   }
 }
